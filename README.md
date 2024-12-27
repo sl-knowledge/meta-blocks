@@ -7,7 +7,7 @@ In the AI programming era, instead of relying on massive frameworks, meta-blocks
 - Build small, focused components
 - Keep each component simple and reusable
 - Combine them easily for new apps
-- Let AI help with the integration and build each component
+- Let AI help with the integration 
 
 ## 2. Component Examples
 ```python
