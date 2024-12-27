@@ -33,12 +33,6 @@ theme="dark"
 ### Simple Way
 ```python
 app = (
-chat,
-data,
-ui
-)
-
-app = (
 chat
 .with_data(data)
 .with_ui(ui)
