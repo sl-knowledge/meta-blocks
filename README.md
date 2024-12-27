@@ -10,39 +10,41 @@ In the AI programming era, instead of relying on massive frameworks, meta-blocks
 - Let AI help with the integration and build each component
 
 ## 2. Component Examples
-AI Chat Component
+```python
+# AI Chat Component
 chat = ai_chat(
 model="gemini",
 style="floating"
 )
-Data Component
+# Data Component
 data = data_handler(
 source="csv",
 auto_clean=True
 )
-Quick UI
+# Quick UI
 ui = quick_ui(
 layout="dashboard",
 theme="dark"
 )
-
+```
 
 ## 3. Building Apps
 
 ### Simple Way
+```python
 app = combine(
 chat,
 data,
 ui
 )
-Way
-app = (
+
+app = combine(
 chat
 .with_data(data)
 .with_ui(ui)
 .build()
 )
-
+```
 
 ## 4. Key Benefits
 
@@ -94,6 +96,7 @@ Staying flexible for future changes
 ## 7. Real World Example
 
 Building an AI chat app
+```python
 app = (
 ChatApp()
 .with_model("gemini") # Set AI model
@@ -102,6 +105,6 @@ ChatApp()
 .with_auth("google") # Add authentication
 .build() # Create the app
 )
-
+```
 
 
