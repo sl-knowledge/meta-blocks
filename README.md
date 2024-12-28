@@ -119,6 +119,15 @@ ChatApp()
 .with_auth("google") # Add authentication
 .build() # Create the app
 )
+
+web = WebComponent()
+    .init_app(templates_dir, static_dir)    # Initialize application
+    .with_debug(True)                       # Set debug mode
+    .with_host('127.0.0.1')                 # Set host
+    .with_port(8000)                        # Set port
+    .with_chat_window()                     # Add chat window
+    .with_stream(stream)                    # Add stream processing
+    .run()                                  # Run server
 ```
 
 
